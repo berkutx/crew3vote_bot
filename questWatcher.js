@@ -57,13 +57,8 @@ class QuestWatcher {
                 break;
             }
             case "image": {
-                // https://api.crew3.xyz/communities/dashrus/claimed-quests/6f747ab1-fcdd-43cd-b48b-16babd07a454?status=pending
-                // let addsInfo = await got.get(baseUrl + "claimed-quests/" + quest.id + "?status=pending", options).json()
-                //let absoluteUrl = addsInfo.submission.value
                 info.type = "image"
                 info.url = claim.submission.value;
-                // let buffer = await got.get(baseUrl + "claimed-quests/" + quest.id + "?status=pending", options).buffer
-                // fs.writeFileSync("e:\\test.img", buffer)
                 break;
             }
             case "none": {
